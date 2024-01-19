@@ -16,7 +16,7 @@ public class LoadTestController : ControllerBase
     }
 
     [HttpPost("runLoadTest")]
-    public async Task<IActionResult> RunLoadTest([FromBody] int numberOfRequests)
+    public async Task<IActionResult> RunLoadTest([FromQuery] int numberOfRequests)
     {
         try
         {
