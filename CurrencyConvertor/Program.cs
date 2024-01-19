@@ -1,6 +1,11 @@
+using CurrencyConvertor.Services.Imp;
+using CurrencyConvertor.Services.Int;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+//builder.Services.AddSingleton<ICurrencyConverter, CurrencyConverter>();
+builder.Services.AddSingleton<ICurrencyConverter, CurrencyConverter_Dijkstra>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
