@@ -145,3 +145,22 @@ To use Dijkstra's algorithm for finding the shortest conversion path, uncomment 
 Choose the strategy that best fits your requirements. The recursive method provides an eager approach to finding conversion paths, while Dijkstra's algorithm focuses on identifying the shortest path. You can easily switch between these implementations to tailor the Currency Converter to your specific use cases.
 
 Feel free to experiment with both methods and determine which one suits your application's needs for currency conversion. The ability to switch between strategies seamlessly allows for optimal customization based on performance and behavior considerations.
+
+
+# Load Test Results
+
+We conducted a load test with 2000 concurrent requests to evaluate the performance of the Currency Converter WebAPI using both Dijkstra's algorithm and the recursive method.
+
+## Dijkstra's Algorithm
+
+- **Number of Requests:** 2000
+- **Elapsed Time:** 12456 ms
+- **Average Response Time:** 4.1735 ms
+
+## Recursive Method
+
+- **Number of Requests:** 2000
+- **Elapsed Time:** 5237 ms
+- **Average Response Time:** 44.0415 ms
+
+These results showcase the efficiency of Dijkstra's algorithm in handling concurrent conversion requests. With a significantly lower average response time, it outperforms the recursive method under heavy loads. Consider these results when choosing the appropriate conversion strategy based on your application's performance requirements.
